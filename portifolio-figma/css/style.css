@@ -1,28 +1,27 @@
 :root{
     --primary-color: #fedc00;
+    --icon-color: #252525;
 
 }
+
 body{
     display: grid;
     grid-template-areas: "content";
     font-family: "Ubuntu", sans-serif;
-    color: #ffffff;
     background-color: #000000;
+    color: #ffffff;
 }
 
 header{
     grid-area: content;
     place-self: start center;
     max-width: 1200px;
-    height: 100px;
     width: 100%;
     z-index: 666;
     display: flex;
     justify-content: space-between;
     align-items: center ;
     margin-top: 48px;
-    
-   
 
 }
 
@@ -35,20 +34,8 @@ main{
 
 section{
     height: 100vh;
+}
 
-}
-.home{
-    background-color: #000000;
-}
-.sobre-mim{
-    
-}
-.projetos{
-    background-color: lightgreen;
-}
-.contato{
-  background-color: plum;
-}
 
 footer{
     grid-area: content;
@@ -56,8 +43,26 @@ footer{
     width: 100%;
     height: 100px;
     background-color: #0005;
-    z-index: 666;
-    max-width: 1200px;
-
-
+    border-top: 2px solid #252525;
+    display: grid;
+    place-content: center;
+    font-size: .75rem;
+    text-decoration-line: underline;
 }
+
+.voltar{
+    position: fixed;
+    display: grid;
+    bottom: 16px;
+    right: 16px;
+    place-content: center;
+    font-size: 2.5rem;
+    transition: all .5s;
+    
+}
+
+.voltar:hover{
+    color: var(--primary-color);
+    transition: all .5s;
+}
+
